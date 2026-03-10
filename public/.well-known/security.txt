@@ -1,0 +1,10 @@
+# Security Policy — Farmácia Ascensão Nunes
+# https://securitytxt.org/ (RFC 9116)
+#
+# If you discover a security vulnerability in this website, please report it
+# responsibly using the contact information below.
+
+Contact: mailto:f.ascensao.nunes@gmail.com
+Preferred-Languages: pt, en
+Canonical: https://www.farmaciaascensaonunes.pt/.well-known/security.txt
+Expires: 2027-02-18T00:00:00.000Z

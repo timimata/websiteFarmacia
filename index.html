@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Security: fallback CSP meta tag (server headers take precedence) -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com https://lh3.googleusercontent.com; font-src 'self' data:; frame-src https://www.google.com/maps/; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests; require-trusted-types-for 'script';"
+    />
+
+    <title>Farmácia Ascensão Nunes | Saúde e Bem-Estar</title>
+    <meta
+      name="description"
+      content="Farmácia Ascensão Nunes em Agualva-Cacém: serviços farmacêuticos, promoções, aconselhamento profissional e atendimento personalizado."
+    />
+    <link rel="canonical" href="%VITE_SITE_URL%/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#059669" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Farmácia Ascensão Nunes | Saúde e Bem-Estar" />
+    <meta
+      property="og:description"
+      content="Cuidamos da sua saúde com serviços farmacêuticos completos, equipa especializada e atendimento próximo."
+    />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:url" content="%VITE_SITE_URL%/" />
+    <meta property="og:image" content="%VITE_SITE_URL%/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Farmácia Ascensão Nunes" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Farmácia Ascensão Nunes | Saúde e Bem-Estar" />
+    <meta
+      name="twitter:description"
+      content="Cuidamos da sua saúde com serviços farmacêuticos completos, equipa especializada e atendimento próximo."
+    />
+    <meta name="twitter:image" content="%VITE_SITE_URL%/og-image.svg" />
+
+    <!-- Structured Data: LocalBusiness + Pharmacy -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Pharmacy",
+        "name": "Farmácia Ascensão Nunes",
+        "description": "Farmácia em Agualva-Cacém com serviços farmacêuticos, promoções, aconselhamento profissional e atendimento personalizado.",
+        "url": "%VITE_SITE_URL%/",
+        "telephone": "+351963013294",
+        "email": "f.ascensao.nunes@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Anta da Agualva 12A",
+          "addressLocality": "Agualva-Cacém",
+          "addressRegion": "Sintra",
+          "postalCode": "2735-579",
+          "addressCountry": "PT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 38.760833,
+          "longitude": -9.296636
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "13:00"
+          }
+        ],
+        "image": "%VITE_SITE_URL%/og-image.svg",
+        "priceRange": "€",
+        "sameAs": [
+          "https://www.facebook.com/FarmaciaAscensaoNunes/",
+          "https://www.instagram.com/farmacia_ascensaonunes/",
+          "https://www.tiktok.com/@farmacia.a.nunes"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

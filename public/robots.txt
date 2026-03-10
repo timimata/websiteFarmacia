@@ -1,0 +1,5 @@
+# Farmácia Ascensão Nunes
+User-agent: *
+Allow: /
+
+Sitemap: https://www.farmaciaascensaonunes.pt/sitemap.xml

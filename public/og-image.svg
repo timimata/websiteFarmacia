@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Heart icon -->
+  <path d="M600 200c-30 0-58 12-78 33-18 19-30 46-30 76 0 63 96 147 108 147s108-84 108-147c0-30-12-57-30-76-20-21-48-33-78-33z" fill="white" opacity="0.3" transform="scale(1.5) translate(-200,-80)"/>
+  <!-- Title -->
+  <text x="600" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="bold" text-anchor="middle" fill="white">Farmácia Ascensão Nunes</text>
+  <!-- Subtitle -->
+  <text x="600" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="28" text-anchor="middle" fill="rgba(255,255,255,0.9)">Cuidamos da sua saúde</text>
+  <!-- Divider -->
+  <rect x="500" y="400" width="200" height="3" rx="1.5" fill="rgba(255,255,255,0.5)"/>
+  <!-- Address -->
+  <text x="600" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="22" text-anchor="middle" fill="rgba(255,255,255,0.8)">Rua Anta da Agualva 12A, Agualva-Cacém</text>
+  <!-- Phone -->
+  <text x="600" y="500" font-family="system-ui, -apple-system, sans-serif" font-size="22" text-anchor="middle" fill="rgba(255,255,255,0.8)">963 013 294</text>
+</svg>

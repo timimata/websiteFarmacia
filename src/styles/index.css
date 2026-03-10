@@ -1,0 +1,7 @@
+@import './tailwind.css';
+@import './theme.css';
+
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
