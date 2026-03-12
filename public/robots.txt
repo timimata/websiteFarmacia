@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.farmaciaascensaonunes.pt/sitemap.xml
+Sitemap: https://www.farmaciaascensaonunes.com/sitemap.xml
