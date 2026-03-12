@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, FileText, Facebook, Instagram, Github } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Instagram, Github } from 'lucide-react';
 import { pharmacyContact } from '@/data/contact';
 import { footerServices } from '@/data/services';
 
@@ -56,10 +56,6 @@ export function Footer() {
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0" />
                 <span>{pharmacyContact.email}</span>
               </a>
-            </div>
-            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-emerald-600/20 border border-emerald-500/30 rounded-full text-xs sm:text-sm">
-              <FileText className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400 flex-shrink-0" />
-              <span className="text-emerald-300">Alvará n.º 5069</span>
             </div>
           </div>
 

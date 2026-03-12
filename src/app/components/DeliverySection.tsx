@@ -76,7 +76,7 @@ export function DeliverySection() {
           <div className="relative order-1 lg:order-2">
             <div className="absolute inset-0 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl sm:rounded-[2rem] transform rotate-3 opacity-20"></div>
             <img
-              src="public\foto8.jpeg"
+                src="/foto8.jpeg"
               alt="Entrega ao domicílio - Farmácia Ascensão Nunes"
               loading="lazy"
               decoding="async"

@@ -142,7 +142,7 @@ O projeto segue as **melhores práticas OWASP** para aplicações web. Abaixo es
 default-src 'self';
 script-src 'self';
 style-src 'self' 'unsafe-inline';
-img-src 'self' data: https://images.unsplash.com https://lh3.googleusercontent.com;
+img-src 'self' data:;
 font-src 'self' data:;
 frame-src https://www.google.com/maps/;
 connect-src 'self';

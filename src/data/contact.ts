@@ -22,9 +22,9 @@ export const pharmacyContact = {
   email: 'f.ascensao.nunes@gmail.com',
   topBarHours: 'Seg–Sex: 09h00–20h00',
   mapsQuery:
-    'https://maps.google.com/?q=Rua+Anta+da+Agualva+12A+Agualva-Cacém',
+    'https://maps.google.com/?q=Farmácia+Ascensão+Nunes,+Rua+Anta+da+Agualva+12A,+Agualva-Cacém',
   mapsDirections:
-    'https://www.google.com/maps/dir//Rua+Anta+da+Agualva+12A,+2735-579+Agualva-Cacém',
+    'https://www.google.com/maps/dir//Farmácia+Ascensão+Nunes,+Rua+Anta+da+Agualva+12A,+2735-579+Agualva-Cacém',
 }
 
 export const contactInfo: ContactInfoItem[] = [

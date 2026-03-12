@@ -1,35 +1,17 @@
+import { User } from 'lucide-react';
+
 export function TeamSection() {
   const teamMembers = [
-    {
-      name: 'Dr.ª Maria Ascensão Nunes',
-      role: 'Farmacêutica Titular',
-      image: 'https://images.unsplash.com/photo-1638202993928-7267aad84c31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwcHJvZmVzc2lvbmFsJTIwd29tYW58ZW58MXx8fHwxNzcwNzU3MTI3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    },
-    {
-      name: 'Dr. João Silva',
-      role: 'Farmacêutico',
-      image: 'https://images.unsplash.com/photo-1758206523685-6e69f80a11ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWxlJTIwaGVhbHRoY2FyZSUyMHdvcmtlcnxlbnwxfHx8fDE3NzA4MTc1MTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    },
-    {
-      name: 'Dr.ª Ana Costa',
-      role: 'Farmacêutica',
-      image: 'https://images.unsplash.com/photo-1645066928295-2506defde470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwaGFybWFjaXN0JTIwcG9ydHJhaXR8ZW58MXx8fHwxNzcwODE3NTEyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    },
-    {
-      name: 'Dr.ª Sofia Pereira',
-      role: 'Nutricionista',
-      image: 'https://images.unsplash.com/photo-1753487050317-919a2b26a6ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHBoYXJtYWNpc3QlMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzcwODE3NTEzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    },
-    {
-      name: 'Carlos Mendes',
-      role: 'Técnico de Farmácia',
-      image: 'https://images.unsplash.com/photo-1618053448748-b7251851d014?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaGFybWFjeSUyMHRlY2huaWNpYW4lMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzA4MTc1MTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    },
-    {
-      name: 'Dr.ª Beatriz Santos',
-      role: 'Farmacêutica',
-      image: 'https://images.unsplash.com/photo-1638202993928-7267aad84c31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmZW1hbGUlMjBtZWRpY2FsJTIwcHJvZmVzc2lvbmFsfGVufDF8fHx8MTc3MDcwNzY3N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    },
+    { name: 'Dra. Lurdes Nunes', role: 'Proprietária e Farmacêutica' },
+    { name: 'Dra. Rita Diniz', role: 'Farmacêutica' },
+    { name: 'Joana Ramos', role: 'Técnica Auxiliar de Farmácia' },
+    { name: 'Cláudia Santos', role: 'Farmacêutica' },
+    { name: 'Marta Martins', role: 'Técnica Auxiliar de Farmácia' },
+    { name: 'Isilda Alves', role: 'Administrativa' },
+    { name: 'Dra. Inês Gonçalves', role: 'Farmacêutica' },
+    { name: 'Dra. Paula Barreto', role: 'Farmacêutica' },
+    { name: 'Inês Monteiro', role: 'Técnica Superior de Diagnóstico e Terapêutica' },
+    { name: 'Dra. Catarina Cordeiro', role: 'Farmacêutica' },
   ];
 
   return (
@@ -44,21 +26,14 @@ export function TeamSection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-8">
           {teamMembers.map((member, index) => (
             <div 
               key={index}
               className="group bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
             >
-              <div className="relative overflow-hidden">
-                <img 
-                  src={member.image}
-                  alt={member.name}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-64 sm:h-72 lg:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative overflow-hidden bg-gradient-to-br from-emerald-100 to-teal-50 flex items-center justify-center h-64 sm:h-72 lg:h-80">
+                <User className="w-20 h-20 text-emerald-300" />
               </div>
               
               <div className="p-5 sm:p-6 text-center">
