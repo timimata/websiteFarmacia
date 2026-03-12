@@ -25,8 +25,14 @@ export function ContactSection() {
             <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8 lg:mb-10">
               {contactInfo.map((info, index) => {
                 const Icon = iconMap[info.type];
+                const href =
+                  info.type === 'phone'
+                    ? pharmacyContact.phoneHref
+                    : info.type === 'email'
+                      ? `mailto:${pharmacyContact.email}`
+                      : pharmacyContact.mapsQuery;
                 return (
-                  <div key={index} className="flex items-start gap-3 sm:gap-4">
+                  <a key={index} href={href} target={info.type === 'location' ? '_blank' : undefined} rel={info.type === 'location' ? 'noopener noreferrer' : undefined} className="flex items-start gap-3 sm:gap-4 hover:opacity-80 transition-opacity">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center flex-shrink-0">
                       <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
@@ -35,7 +41,7 @@ export function ContactSection() {
                       <div className="font-semibold text-base sm:text-lg">{info.value}</div>
                       <div className="text-xs sm:text-sm text-emerald-100">{info.subvalue}</div>
                     </div>
-                  </div>
+                  </a>
                 );
               })}
             </div>
