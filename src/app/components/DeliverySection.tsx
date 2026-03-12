@@ -31,31 +31,31 @@ export function DeliverySection() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-2">
-              <div className="flex items-start gap-3 p-4 bg-emerald-50 rounded-xl">
-                <div className="w-9 h-9 rounded-lg bg-emerald-600 flex items-center justify-center flex-shrink-0">
-                  <Truck className="w-5 h-5 text-white" />
+            <div className="grid grid-cols-3 gap-2.5 sm:gap-4 pt-2">
+              <div className="flex items-start gap-2 sm:gap-3 p-2.5 sm:p-4 bg-emerald-50 rounded-lg sm:rounded-xl">
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-emerald-600 flex items-center justify-center flex-shrink-0">
+                  <Truck className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900 text-sm">Entrega Rápida</div>
+                  <div className="font-semibold text-gray-900 text-xs sm:text-sm">Entrega Rápida</div>
                   <div className="text-xs text-gray-500">No próprio dia</div>
                 </div>
               </div>
-              <div className="flex items-start gap-3 p-4 bg-emerald-50 rounded-xl">
-                <div className="w-9 h-9 rounded-lg bg-emerald-600 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-white" />
+              <div className="flex items-start gap-2 sm:gap-3 p-2.5 sm:p-4 bg-emerald-50 rounded-lg sm:rounded-xl">
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-emerald-600 flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900 text-sm">Zona Local</div>
+                  <div className="font-semibold text-gray-900 text-xs sm:text-sm">Zona Local</div>
                   <div className="text-xs text-gray-500">Concelho de Sintra</div>
                 </div>
               </div>
-              <div className="flex items-start gap-3 p-4 bg-emerald-50 rounded-xl">
-                <div className="w-9 h-9 rounded-lg bg-emerald-600 flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-white" />
+              <div className="flex items-start gap-2 sm:gap-3 p-2.5 sm:p-4 bg-emerald-50 rounded-lg sm:rounded-xl">
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-emerald-600 flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900 text-sm">Fácil Contacto</div>
+                  <div className="font-semibold text-gray-900 text-xs sm:text-sm">Fácil Contacto</div>
                   <div className="text-xs text-gray-500">Por telefone</div>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export function DeliverySection() {
               alt="Entrega ao domicílio - Farmácia Ascensão Nunes"
               loading="lazy"
               decoding="async"
-              className="relative rounded-2xl sm:rounded-[2rem] shadow-2xl w-full h-80 sm:h-96 lg:h-[620px] object-cover"
+              className="relative rounded-2xl sm:rounded-[2rem] shadow-2xl w-full aspect-[3/4] sm:aspect-[4/5] lg:aspect-auto lg:h-[620px] object-cover"
             />
           </div>
 

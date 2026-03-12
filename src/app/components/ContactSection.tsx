@@ -96,7 +96,7 @@ export function ContactSection() {
             <div className="grid lg:grid-cols-5 gap-6 sm:gap-8 p-6 sm:p-8 lg:p-10">
               {/* Map Embed - Takes more space on desktop */}
               <div className="lg:col-span-3 order-2 lg:order-1">
-                <div className="relative w-full h-64 sm:h-80 lg:h-full lg:min-h-[400px] rounded-xl sm:rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+                <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-full lg:min-h-[400px] rounded-xl sm:rounded-2xl overflow-hidden shadow-lg border border-gray-200">
                   <iframe
                     title="Localização da Farmácia Ascensão Nunes"
                     src="https://maps.google.com/maps?q=Farm%C3%A1cia+Ascens%C3%A3o+Nunes,+Rua+Anta+da+Agualva+12A,+Agualva-Cac%C3%A9m&t=&z=16&ie=UTF8&iwloc=&output=embed"

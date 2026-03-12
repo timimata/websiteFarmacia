@@ -28,7 +28,7 @@ export function InstitutionalSection() {
           {/* Carousel - Appears first on mobile */}
           <div className="relative order-1 lg:order-1">
             <div className="absolute inset-0 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl sm:rounded-[2rem] transform -rotate-3 opacity-20"></div>
-            <div className="relative rounded-2xl sm:rounded-[2rem] shadow-2xl w-full h-80 sm:h-96 lg:h-[620px] overflow-hidden">
+            <div className="relative rounded-2xl sm:rounded-[2rem] shadow-2xl w-full aspect-[3/4] sm:aspect-[4/5] lg:aspect-auto lg:h-[620px] overflow-hidden">
               {photos.map((src, i) => (
                 <img
                   key={src}

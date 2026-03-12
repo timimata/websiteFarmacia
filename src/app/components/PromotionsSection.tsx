@@ -49,7 +49,7 @@ export function PromotionsSection() {
   const ProductCard = ({ promo }: { promo: typeof promotions[number] }) => (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl hover:border-emerald-200 transition-all duration-300 group h-full flex flex-col">
       {/* Image */}
-      <div className="relative h-56 overflow-hidden bg-gradient-to-br from-gray-50 to-emerald-50/30">
+      <div className="relative h-44 sm:h-56 overflow-hidden bg-gradient-to-br from-gray-50 to-emerald-50/30">
         <img
           src={promo.image}
           alt={promo.title}
@@ -98,8 +98,8 @@ export function PromotionsSection() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-8 sm:mb-10 lg:mb-12">
-          <div className="text-left">
+        <div className="flex flex-col items-center text-center md:flex-row md:text-left md:items-center justify-center gap-4 sm:gap-6 mb-8 sm:mb-10 lg:mb-12">
+          <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4">
               <Sparkles className="w-4 h-4" />
               <span>Poupe agora</span>
@@ -117,7 +117,7 @@ export function PromotionsSection() {
           <img
             src="/produtos/cartaoFarmaciaPortuguesa.png"
             alt="Cartão Farmácias Portuguesas"
-            className="h-40 sm:h-52 w-auto object-contain flex-shrink-0"
+            className="h-32 sm:h-40 md:h-52 w-auto object-contain flex-shrink-0"
           />
         </div>
 
@@ -151,7 +151,7 @@ export function PromotionsSection() {
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {promotions.map((promo) => (
-                <div key={promo.id} className="flex-none w-[250px] sm:w-[260px] snap-start">
+                <div key={promo.id} className="flex-none w-[75vw] sm:w-[45vw] lg:w-[calc(25%-15px)] snap-start">
                   <ProductCard promo={promo} />
                 </div>
               ))}
@@ -225,7 +225,7 @@ export function PromotionsSection() {
         {isExpanded && (
           <div
             id="all-promotions-grid"
-            className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6"
+            className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6"
           >
             {promotions.map((promo) => (
               <ProductCard key={promo.id} promo={promo} />

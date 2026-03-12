@@ -26,21 +26,21 @@ export function TeamSection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-5 lg:gap-6">
           {teamMembers.map((member, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+              className="group bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
             >
-              <div className="relative overflow-hidden bg-gradient-to-br from-emerald-100 to-teal-50 flex items-center justify-center h-64 sm:h-72 lg:h-80">
-                <User className="w-20 h-20 text-emerald-300" />
+              <div className="relative overflow-hidden bg-gradient-to-br from-emerald-100 to-teal-50 flex items-center justify-center aspect-square">
+                <User className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 text-emerald-300" />
               </div>
               
-              <div className="p-5 sm:p-6 text-center">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2">
+              <div className="p-3 sm:p-4 lg:p-5 text-center">
+                <h3 className="text-sm sm:text-base lg:text-lg font-bold text-gray-900 mb-0.5 sm:mb-1">
                   {member.name}
                 </h3>
-                <p className="text-sm sm:text-base text-emerald-600 font-medium">
+                <p className="text-xs sm:text-sm text-emerald-600 font-medium">
                   {member.role}
                 </p>
               </div>

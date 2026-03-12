@@ -144,6 +144,7 @@ function shuffleArray<T>(array: T[]): T[] {
   const shuffled = [...array];
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
+    // eslint-disable-next-line security/detect-object-injection
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
   return shuffled;
@@ -165,6 +166,17 @@ export function Testimonials() {
     shuffled[(offset + 1) % shuffled.length],
     shuffled[(offset + 2) % shuffled.length],
   ];
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 640);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+
+  const displayed = isMobile ? [visible[0]] : visible;
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-white to-emerald-50/30">
@@ -194,7 +206,7 @@ export function Testimonials() {
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {visible.map((testimonial) => (
+          {displayed.map((testimonial) => (
             <div 
               key={`${testimonial.name}-${offset}`}
               className="bg-white p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 relative animate-[fadeIn_0.5s_ease-in-out]"

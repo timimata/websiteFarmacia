@@ -72,6 +72,7 @@ export function escapeHtml(input: string): string {
     "'": '&#x27;',
     '/': '&#x2F;',
   };
+  // eslint-disable-next-line security/detect-object-injection
   return input.replace(/[&<>"'/]/g, (char) => map[char]);
 }
 
