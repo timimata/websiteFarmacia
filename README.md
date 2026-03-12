@@ -62,7 +62,7 @@ websitefarmacia/
 ├── public/                          # Ficheiros estáticos
 │   ├── .well-known/security.txt     # Divulgação responsável (RFC 9116)
 │   ├── favicon.svg                  # Favicon
-│   ├── logo.svg                     # Logo da farmácia
+│   ├── logo.png                     # Logo da farmácia
 │   ├── og-image.svg                 # Imagem para redes sociais
 │   ├── robots.txt                   # Configuração para crawlers
 │   └── sitemap.xml                  # Mapa do site para SEO

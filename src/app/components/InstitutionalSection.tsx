@@ -98,7 +98,7 @@ export function InstitutionalSection() {
                 <div className="text-xs sm:text-sm text-gray-600">Anos de Serviço</div>
               </div>
               <div className="text-center p-2.5 sm:p-4 bg-white rounded-xl sm:rounded-2xl shadow-md">
-                <div className="text-xl sm:text-3xl font-bold text-emerald-600 mb-0.5 sm:mb-1">750+</div>
+                <div className="text-xl sm:text-3xl font-bold text-emerald-600 mb-0.5 sm:mb-1">1000+</div>
                 <div className="text-xs sm:text-sm text-gray-600">Clientes Ativos</div>
               </div>
               <div className="text-center p-2.5 sm:p-4 bg-white rounded-xl sm:rounded-2xl shadow-md">

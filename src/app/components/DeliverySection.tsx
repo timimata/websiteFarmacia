@@ -47,7 +47,7 @@ export function DeliverySection() {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900 text-sm">Zona Local</div>
-                  <div className="text-xs text-gray-500">Agualva-Cacém</div>
+                  <div className="text-xs text-gray-500">Concelho de Sintra</div>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 bg-emerald-50 rounded-xl">
@@ -63,7 +63,7 @@ export function DeliverySection() {
 
             <div className="flex items-center gap-3 pt-2">
               <Clock className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-              <p className="text-sm text-gray-500">Encomendas aceites até as 14h.</p>
+              <p className="text-sm text-gray-500">Encomendas aceites pelo <a href="tel:214324097" className="text-emerald-600 font-medium hover:underline">214 324 097</a>.</p>
             </div>
 
             <div className="flex items-center gap-3 pt-0">

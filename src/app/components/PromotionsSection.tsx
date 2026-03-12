@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { Clock, Sparkles, ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
+import { Sparkles, ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
 import { promotions } from '@/data/promotions';
 
 export function PromotionsSection() {

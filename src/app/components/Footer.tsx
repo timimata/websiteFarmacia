@@ -34,7 +34,7 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-2">
             <div className="flex items-center gap-2 mb-4 sm:mb-6">
               <img
-                src="/logo.svg"
+                src="/logo.png"
                 alt="Logo Farmácia Ascensão Nunes"
                 className="w-9 h-9 sm:w-10 sm:h-10"
               />

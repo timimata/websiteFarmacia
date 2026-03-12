@@ -91,7 +91,7 @@ export function Hero() {
               <Star size={20} color="#059669" />
             </div>
             <div style={{ fontSize: '13px', color: '#4b5563' }}>
-              <strong style={{ display: 'block', color: '#111827', fontSize: '14px' }}>+750 clientes</strong>
+              <strong style={{ display: 'block', color: '#111827', fontSize: '14px' }}>+1000 clientes</strong>
               confiam em nós
             </div>
           </div>

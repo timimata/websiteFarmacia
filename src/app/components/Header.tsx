@@ -60,7 +60,7 @@ export function Header() {
               className="flex items-center gap-2 sm:gap-3 group min-h-[44px]"
             >
               <img
-                src="/logo.svg"
+                src="/logo.png"
                 alt="Logo Farmácia Ascensão Nunes"
                 className="w-9 h-9 sm:w-10 sm:h-10 group-hover:scale-105 transition-transform"
               />
@@ -125,7 +125,7 @@ export function Header() {
               <div className="flex items-center justify-between p-6 border-b border-gray-100">
                 <div className="flex items-center gap-3">
                   <img
-                    src="/logo.svg"
+                    src="/logo.png"
                     alt="Logo Farmácia Ascensão Nunes"
                     className="w-10 h-10"
                   />
