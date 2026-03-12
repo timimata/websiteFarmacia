@@ -5,7 +5,7 @@ export function TeamSection() {
     { name: 'Dra. Lurdes Nunes', role: 'Proprietária e Farmacêutica' },
     { name: 'Dra. Rita Diniz', role: 'Farmacêutica' },
     { name: 'Joana Ramos', role: 'Técnica Auxiliar de Farmácia' },
-    { name: 'Cláudia Santos', role: 'Farmacêutica' },
+    { name: 'Dra. Cláudia Santos', role: 'Farmacêutica' },
     { name: 'Marta Martins', role: 'Técnica Auxiliar de Farmácia' },
     { name: 'Isilda Alves', role: 'Administrativa' },
     { name: 'Dra. Inês Gonçalves', role: 'Farmacêutica' },

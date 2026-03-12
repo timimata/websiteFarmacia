@@ -41,7 +41,7 @@ export function ContactSection() {
             </div>
             
             <a
-              href={`tel:${pharmacyContact.phone.replace(/\s/g, '')}`}
+              href={pharmacyContact.phoneHref}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-emerald-600 rounded-full font-semibold hover:bg-emerald-50 transition-all shadow-xl min-h-[56px] sm:min-h-0"
             >
               Contactar Agora
@@ -147,15 +147,7 @@ export function ContactSection() {
                       Fácil acesso e próximo da A16
                     </p>
                   </div>
-                  <div className="flex items-start gap-2">
-                    <div className="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <div className="w-2 h-2 rounded-full bg-emerald-600"></div>
-                    </div>
-                    <p className="text-sm sm:text-base text-gray-700">
-                      A 5 minutos da estação de Agualva-Cacém
-                    </p>
                   </div>
-                </div>
 
                 {/* CTA Button */}
                 <a

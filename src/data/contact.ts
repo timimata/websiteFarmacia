@@ -17,8 +17,10 @@ export const pharmacyContact = {
   addressLine1: 'Rua Anta da Agualva 12A',
   addressLine2: '2735-579 Agualva-Cacém',
   city: 'Sintra, Portugal',
-  phone: '963 013 294',
-  phoneHref: 'tel:963013294',
+  phone: '21 432 3020',
+  phone2: '21 432 4097',
+  phoneHref: 'tel:214323020',
+  phoneHref2: 'tel:214324097',
   email: 'f.ascensao.nunes@gmail.com',
   topBarHours: 'Seg–Sex: 09h00–20h00',
   mapsQuery:
@@ -37,8 +39,8 @@ export const contactInfo: ContactInfoItem[] = [
   {
     type: 'phone',
     label: 'Telefone',
-    value: pharmacyContact.phone,
-    subvalue: 'Chamada para rede móvel nacional',
+    value: `${pharmacyContact.phone} | ${pharmacyContact.phone2}`,
+    subvalue: 'Chamada para rede fixa nacional',
   },
   {
     type: 'email',

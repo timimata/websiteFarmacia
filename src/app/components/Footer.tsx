@@ -52,6 +52,10 @@ export function Footer() {
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0" />
                 <span>{pharmacyContact.phone}</span>
               </a>
+              <a href={pharmacyContact.phoneHref2} className="flex items-center gap-2 sm:gap-3 text-gray-400 hover:text-emerald-400 transition-colors text-sm sm:text-base">
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0" />
+                <span>{pharmacyContact.phone2}</span>
+              </a>
               <a href={`mailto:${pharmacyContact.email}`} className="flex items-center gap-2 sm:gap-3 text-gray-400 hover:text-emerald-400 transition-colors text-sm sm:text-base">
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-500 flex-shrink-0" />
                 <span>{pharmacyContact.email}</span>

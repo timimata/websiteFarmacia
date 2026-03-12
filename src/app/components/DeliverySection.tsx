@@ -1,4 +1,5 @@
 import { Truck, Clock, MapPin, Phone } from 'lucide-react';
+import { pharmacyContact } from '@/data/contact';
 
 export function DeliverySection() {
   return (
@@ -63,7 +64,7 @@ export function DeliverySection() {
 
             <div className="flex items-center gap-3 pt-2">
               <Clock className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-              <p className="text-sm text-gray-500">Encomendas aceites pelo <a href="tel:214324097" className="text-emerald-600 font-medium hover:underline">214 324 097</a>.</p>
+              <p className="text-sm text-gray-500">Encomendas aceites pelo <a href={pharmacyContact.phoneHref} className="text-emerald-600 font-medium hover:underline">{pharmacyContact.phone}</a> ou <a href={pharmacyContact.phoneHref2} className="text-emerald-600 font-medium hover:underline">{pharmacyContact.phone2}</a>.</p>
             </div>
 
             <div className="flex items-center gap-3 pt-0">

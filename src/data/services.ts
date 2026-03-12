@@ -30,7 +30,7 @@ export const popularServices: ServiceItem[] = [
   },
   {
     icon: 'syringe',
-    title: 'Administração de Injetáveis',
+    title: 'Administração de Vacinas e Injetáveis',
     description:
       'Administração de injetáveis por profissionais certificados em ambiente seguro.',
     gradient: 'from-cyan-500 to-teal-500',
