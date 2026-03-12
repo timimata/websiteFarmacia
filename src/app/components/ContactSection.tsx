@@ -112,8 +112,10 @@ export function ContactSection() {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    /* Security: sandbox the iframe to restrict capabilities (OWASP) */
-                    sandbox="allow-scripts allow-same-origin"
+                    /* Security: sandbox the iframe to restrict capabilities (OWASP).
+                       allow-popups is required for Google Maps embed buttons (external link / directions)
+                       to open in a new tab; without it those icons are broken for the user. */
+                    sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
                     className="absolute inset-0"
                   />
                 </div>
