@@ -170,10 +170,18 @@ export function Testimonials() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    let timeoutId: ReturnType<typeof setTimeout>;
     const check = () => setIsMobile(window.innerWidth < 640);
+    const handleResize = () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(check, 150);
+    };
     check();
-    window.addEventListener('resize', check);
-    return () => window.removeEventListener('resize', check);
+    window.addEventListener('resize', handleResize, { passive: true });
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   const displayed = isMobile ? [visible[0]] : visible;
@@ -225,6 +233,8 @@ export function Testimonials() {
                       loading="lazy"
                       decoding="async"
                       referrerPolicy="no-referrer"
+                      width={64}
+                      height={64}
                       onError={(event) => {
                         event.currentTarget.style.display = 'none';
                       }}

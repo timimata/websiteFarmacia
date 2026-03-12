@@ -1,6 +1,7 @@
 import { MapPin, Phone, Mail, Facebook, Instagram, Github } from 'lucide-react';
 import { pharmacyContact } from '@/data/contact';
 import { footerServices } from '@/data/services';
+import { scrollToSection } from '@/lib/scroll';
 
 export function Footer() {
   const navigation = {
@@ -14,16 +15,6 @@ export function Footer() {
       { label: 'Promoções', id: 'promocoes' },
       { label: 'Contacto', id: 'contactos' },
     ],
-  };
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-    }
   };
 
   return (
@@ -67,8 +58,8 @@ export function Footer() {
           <div>
             <h3 className="font-bold text-base sm:text-lg mb-3 sm:mb-4">Serviços</h3>
             <ul className="space-y-2 sm:space-y-3">
-              {navigation.services.map((item, index) => (
-                <li key={index}>
+              {navigation.services.map((item) => (
+                <li key={item}>
                   <button
                     onClick={() => scrollToSection('servicos')}
                     className="text-sm sm:text-base text-gray-400 hover:text-emerald-400 transition-colors text-left py-1.5 min-h-[44px] sm:min-h-0 flex items-center"

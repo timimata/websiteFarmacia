@@ -23,7 +23,7 @@ export function ContactSection() {
             </p>
             
             <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8 lg:mb-10">
-              {contactInfo.map((info, index) => {
+              {contactInfo.map((info) => {
                 const Icon = iconMap[info.type];
                 const href =
                   info.type === 'phone'
@@ -32,7 +32,7 @@ export function ContactSection() {
                       ? `mailto:${pharmacyContact.email}`
                       : pharmacyContact.mapsQuery;
                 return (
-                  <a key={index} href={href} target={info.type === 'location' ? '_blank' : undefined} rel={info.type === 'location' ? 'noopener noreferrer' : undefined} className="flex items-start gap-3 sm:gap-4 hover:opacity-80 transition-opacity">
+                  <a key={info.type} href={href} target={info.type === 'location' ? '_blank' : undefined} rel={info.type === 'location' ? 'noopener noreferrer' : undefined} className="flex items-start gap-3 sm:gap-4 hover:opacity-80 transition-opacity">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center flex-shrink-0">
                       <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
@@ -62,8 +62,8 @@ export function ContactSection() {
             </div>
             
             <div className="space-y-3 sm:space-y-4">
-              {openingHours.map((schedule, index) => (
-                <div key={index} className="flex items-center justify-between py-3 sm:py-4 border-b border-white/20 last:border-0">
+              {openingHours.map((schedule) => (
+                <div key={schedule.day} className="flex items-center justify-between py-3 sm:py-4 border-b border-white/20 last:border-0">
                   <span className="font-semibold text-sm sm:text-base">{schedule.day}</span>
                   <span className="text-emerald-100 text-sm sm:text-base text-right">{schedule.time}</span>
                 </div>
@@ -113,7 +113,7 @@ export function ContactSection() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     /* Security: sandbox the iframe to restrict capabilities (OWASP) */
-                    sandbox="allow-scripts allow-same-origin allow-popups"
+                    sandbox="allow-scripts allow-same-origin"
                     className="absolute inset-0"
                   />
                 </div>

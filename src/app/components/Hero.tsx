@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ArrowRight, Star, CheckCircle } from 'lucide-react';
+import { scrollToSection } from '@/lib/scroll';
 
 function isPharmacyOpen(): boolean {
   const now = new Date();
@@ -20,14 +21,6 @@ function isPharmacyOpen(): boolean {
   }
 }
 
-function scrollToSection(id: string) {
-  const el = document.getElementById(id);
-  if (el) {
-    const offset = 80;
-    const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
-    window.scrollTo({ top, behavior: 'smooth' });
-  }
-}
 
 export function Hero() {
   const [open, setOpen] = useState(isPharmacyOpen);
@@ -79,8 +72,11 @@ export function Hero() {
             <img
               src="/fachada.jpg.jpeg"
               alt="Farmácia Ascensão Nunes"
-              loading="lazy"
+              loading="eager"
+              fetchPriority="high"
               decoding="async"
+              width={640}
+              height={480}
               className="w-full h-full object-cover block"
             />
           </div>

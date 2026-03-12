@@ -4,7 +4,7 @@
  * The SITE_URL is read from the VITE_SITE_URL environment variable at build
  * time. Create a `.env` (or `.env.production`) file in the project root:
  *
- *   VITE_SITE_URL=https://www.farmaciaascensaonunes.pt
+ *   VITE_SITE_URL=https://www.farmaciaascensaonunes.com
  *
  * If not set, it falls back to "/" so relative paths still work.
  */

@@ -34,17 +34,17 @@ export default function App() {
       <Header />
       <main>
         <Hero />
-        <Suspense fallback={null}>
+        <Suspense fallback={<div className="h-96 animate-pulse bg-gray-100" aria-hidden="true" />}>
           <PromotionsSection />
         </Suspense>
         <DeliverySection />
         <PopularServices />
         <InstitutionalSection />
-        <Suspense fallback={null}>
+        <Suspense fallback={<div className="h-96 animate-pulse bg-gray-50" aria-hidden="true" />}>
           <TeamSection />
         </Suspense>
         <ContactSection />
-        <Suspense fallback={null}>
+        <Suspense fallback={<div className="h-64 animate-pulse bg-gray-50" aria-hidden="true" />}>
           <Testimonials />
         </Suspense>
       </main>

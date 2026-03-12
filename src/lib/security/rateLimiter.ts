@@ -17,6 +17,10 @@
  * NOTE: This is a **client-side** guard. It does NOT replace server-side rate
  * limiting — it only improves UX and reduces obviously-abusive traffic before
  * it reaches the server.
+ *
+ * ⚠️  USAGE REQUIREMENT: This limiter must be wired up at every form/submission
+ * point before going live. A contact form added without calling `limiter.check()`
+ * provides ZERO protection. Server-side enforcement is mandatory.
  */
 
 export interface RateLimiterOptions {

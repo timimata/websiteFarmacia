@@ -1,15 +1,23 @@
 import { X, Menu } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { scrollToSection } from '@/lib/scroll';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 10);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -24,19 +32,9 @@ export function Header() {
     };
   }, [isMobileMenuOpen]);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offset = 80; // Height of sticky header
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-      setIsMobileMenuOpen(false);
-    }
+  const handleNavClick = (id: string) => {
+    scrollToSection(id);
+    setIsMobileMenuOpen(false);
   };
 
   const menuItems = [
@@ -56,7 +54,7 @@ export function Header() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <button 
-              onClick={() => scrollToSection('inicio')}
+              onClick={() => handleNavClick('inicio')}
               className="flex items-center gap-2 sm:gap-3 group min-h-[44px]"
             >
               <img
@@ -76,10 +74,10 @@ export function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-1" aria-label="Navegação principal">
-              {menuItems.map((item, index) => (
+              {menuItems.map((item) => (
                 <button
-                  key={index}
-                  onClick={() => scrollToSection(item.id)}
+                  key={item.id}
+                  onClick={() => handleNavClick(item.id)}
                   className="px-4 py-2 text-gray-700 font-medium hover:text-emerald-600 hover:bg-emerald-50 rounded-xl transition-all"
                 >
                   {item.label}
@@ -89,7 +87,7 @@ export function Header() {
 
             {/* Desktop CTA Button */}
             <button 
-              onClick={() => scrollToSection('contactos')}
+              onClick={() => handleNavClick('contactos')}
               className="hidden lg:inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-full font-semibold hover:shadow-lg transition-all"
             >
               Contacte-nos
@@ -142,10 +140,10 @@ export function Header() {
 
               {/* Mobile Menu Items */}
               <nav className="flex-1 overflow-y-auto py-6 px-4">
-                {menuItems.map((item, index) => (
+                {menuItems.map((item) => (
                   <button
-                    key={index}
-                    onClick={() => scrollToSection(item.id)}
+                    key={item.id}
+                    onClick={() => handleNavClick(item.id)}
                     className="w-full text-left px-6 py-4 text-lg font-semibold text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-2xl transition-all mb-2 min-h-[56px] flex items-center"
                   >
                     {item.label}
@@ -156,7 +154,7 @@ export function Header() {
               {/* Mobile Menu CTA */}
               <div className="p-6 border-t border-gray-100">
                 <button 
-                  onClick={() => scrollToSection('contactos')}
+                  onClick={() => handleNavClick('contactos')}
                   className="w-full py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-full font-semibold hover:shadow-lg transition-all min-h-[56px]"
                 >
                   Contacte-nos

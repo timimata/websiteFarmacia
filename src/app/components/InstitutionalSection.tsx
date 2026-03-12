@@ -34,8 +34,10 @@ export function InstitutionalSection() {
                   key={src}
                   src={src}
                   alt={`Farmácia Ascensão Nunes ${i + 1}`}
-                  loading="lazy"
+                  loading={i === 0 ? 'eager' : 'lazy'}
                   decoding="async"
+                  width={620}
+                  height={826}
                   className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
                   style={{ opacity: i === current ? 1 : 0 }}
                 />
