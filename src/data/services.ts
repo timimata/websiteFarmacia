@@ -5,11 +5,13 @@ export type ServiceIcon =
   | 'droplets'
   | 'activity'
   | 'pillBottle'
+  | 'testTube'
+  | 'ear'
 
 export interface ServiceItem {
   icon: ServiceIcon
   title: string
-  description: string
+  description?: string
   gradient: string
 }
 
@@ -56,6 +58,19 @@ export const popularServices: ServiceItem[] = [
       'Preparação Individualizada de Medicação para maior segurança e adesão terapêutica.',
     gradient: 'from-emerald-500 to-teal-500',
   },
+  {
+    icon: 'testTube',
+    title: 'Teste Rápido Infeção Aguda da Orofaringe',
+    description:
+      'Diagnóstico rápido de infrações da orofaringe para adequado aconselhamento farmacêutico.',
+    gradient: 'from-cyan-500 to-emerald-500',
+  },
+  {
+    icon: 'ear',
+    title: 'Furação de Orelhas',
+    description: 'Furação indolor e segura realizada por profissionais certificados.',
+    gradient: 'from-teal-500 to-green-500',
+  },
 ]
 
 export const footerServices = [
@@ -65,4 +80,5 @@ export const footerServices = [
   'Medição de Colesterol',
   'Medição de Glicémia',
   'PIM',
+  'Teste Rápido Infeção da Orofaringe',
 ]

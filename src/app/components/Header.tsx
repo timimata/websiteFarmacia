@@ -40,9 +40,11 @@ export function Header() {
   const menuItems = [
     { label: 'Início', id: 'inicio' },
     { label: 'Serviços', id: 'servicos' },
-    { label: 'Sobre nós', id: 'sobre' },
+    { label: 'Promoções', id: 'promocoes' },
+
     { label: 'Equipa', id: 'equipa' },
-    { label: 'Contactos', id: 'contactos' },
+    { label: 'Entregas', id: 'entregas' },
+    { label: 'Horários', id: 'contactos' },
   ];
 
   return (

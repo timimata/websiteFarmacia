@@ -1,4 +1,4 @@
-import { Salad, Footprints, Syringe, Droplets, Activity, PillBottle } from 'lucide-react';
+import { Salad, Footprints, Syringe, Droplets, Activity, PillBottle, TestTubeDiagonal, Ear } from 'lucide-react';
 import { popularServices } from '@/data/services';
 
 export function PopularServices() {
@@ -9,6 +9,8 @@ export function PopularServices() {
     droplets: Droplets,
     activity: Activity,
     pillBottle: PillBottle,
+    testTube: TestTubeDiagonal,
+    ear: Ear,
   };
 
   return (
@@ -23,13 +25,13 @@ export function PopularServices() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
           {popularServices.map((service, index) => {
             const Icon = iconMap[service.icon];
             return (
-              <div 
+              <div
                 key={index}
-                className="group bg-white p-6 sm:p-8 rounded-2xl sm:rounded-3xl hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-emerald-200 cursor-pointer"
+                className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] group bg-white p-6 sm:p-8 rounded-2xl sm:rounded-3xl hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-emerald-200 cursor-pointer"
               >
                 <div className={`w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform shadow-lg`}>
                   <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
@@ -37,9 +39,11 @@ export function PopularServices() {
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
                   {service.title}
                 </h3>
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
+                {service.description && (
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                    {service.description}
+                  </p>
+                )}
               </div>
             );
           })}
