@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 
 const photos = [
-  '/foto1.jpeg',
-  '/foto2.jpeg',
-  '/foto3.jpeg',
-  '/foto4.jpeg',
-  '/foto5.jpeg',
-  '/foto6.jpeg',
-  '/foto7.jpeg',
+  '/foto1.webp',
+  '/foto2.webp',
+  '/foto3.webp',
+  '/foto4.webp',
+  '/foto5.webp',
+  '/foto6.webp',
+  '/foto7.webp',
 ];
 
 export function InstitutionalSection() {
@@ -33,6 +33,8 @@ export function InstitutionalSection() {
                 <img
                   key={src}
                   src={src}
+                  srcSet={`${src.replace('.webp', '-small.webp')} 600w, ${src} 1200w`}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   alt={`Farmácia Ascensão Nunes ${i + 1}`}
                   loading={i === 0 ? 'eager' : 'lazy'}
                   decoding="async"

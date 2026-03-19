@@ -70,7 +70,9 @@ export function Hero() {
         <div className="relative z-[1] order-1 lg:order-2">
           <div className="rounded-2xl sm:rounded-[20px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.1)] aspect-[4/3]">
             <img
-              src="/fachada.jpg.jpeg"
+              src="/fachada.webp"
+              srcSet="/fachada-small.webp 600w, /fachada.webp 1200w"
+              sizes="(max-width: 1024px) 100vw, 50vw"
               alt="Farmácia Ascensão Nunes"
               loading="eager"
               fetchPriority="high"

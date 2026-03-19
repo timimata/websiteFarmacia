@@ -21,7 +21,7 @@ export const promotions: Promotion[] = [
       'Leite infantil de qualidade premium com nutrientes essenciais para o desenvolvimento saudável do seu bebé. Fórmula avançada e cientificamente comprovada.',
     discountLabel: '-3€',
     validUntil: '31 de março de 2026',
-    image: '/produtos/aptamil.png',
+    image: '/produtos/aptamil.webp',
     badge: 'Promoção ativa',
   },
   {
@@ -33,7 +33,7 @@ export const promotions: Promotion[] = [
       'Pomada protetora para a zona da fralda. Protege contra irritações e ajuda a regenerar a pele delicada do bebé. Sem conservantes nem fragrâncias.',
     discountLabel: '-1,50€',
     validUntil: '31 de março de 2026',
-    image: '/produtos/bepanthenBaby.png',
+    image: '/produtos/bepanthenBaby.webp',
     badge: 'Promoção ativa',
   },
   {
@@ -45,7 +45,7 @@ export const promotions: Promotion[] = [
       'Vitamina C efervescente para reforçar o sistema imunitário. Sabor agradável e absorção rápida. Ideal para toda a família durante todo o ano.',
     discountLabel: '-2€',
     validUntil: '31 de março de 2026',
-    image: '/produtos/cebion.png',
+    image: '/produtos/cebion.webp',
     badge: 'Promoção ativa',
   },
   {
@@ -57,7 +57,7 @@ export const promotions: Promotion[] = [
       'Multivitamínico completo com vitaminas e minerais essenciais. Fórmula equilibrada para apoiar a energia, imunidade e bem-estar geral.',
     discountLabel: 'até -5€',
     validUntil: '31 de março de 2026',
-    image: '/produtos/Centrum.png',
+    image: '/produtos/Centrum.webp',
     badge: 'Promoção ativa',
   },
   {
@@ -69,7 +69,7 @@ export const promotions: Promotion[] = [
       'Creme fixador para próteses dentárias. Fixação forte e duradoura durante todo o dia. Ajuda a prevenir a entrada de partículas de alimentos.',
     discountLabel: '-2€',
     validUntil: '31 de março de 2026',
-    image: '/produtos/corega.png',
+    image: '/produtos/corega.webp',
     badge: 'Promoção ativa',
   },
   {
@@ -82,7 +82,7 @@ export const promotions: Promotion[] = [
     discountLabel: '-6€',
     note: 'Na compra de 2 embalagens',
     validUntil: '31 de março de 2026',
-    image: '/produtos/fortimel.png',
+    image: '/produtos/fortimel.webp',
     badge: 'Promoção ativa',
   },
   {
@@ -94,7 +94,7 @@ export const promotions: Promotion[] = [
       'Leite infantil com fórmula avançada para o desenvolvimento saudável. Enriquecido com nutrientes essenciais para as necessidades do bebé.',
     discountLabel: '-4€',
     validUntil: '31 de março de 2026',
-    image: '/produtos/nan.png',
+    image: '/produtos/nan.webp',
     badge: 'Promoção ativa',
   },
   {
@@ -106,7 +106,7 @@ export const promotions: Promotion[] = [
       'Pasta dentífrica especializada para gengivas. Ajuda a parar e prevenir o sangramento das gengivas. Uso diário para uma saúde oral completa.',
     discountLabel: '-2€',
     validUntil: '31 de março de 2026',
-    image: '/produtos/parondontax.png',
+    image: '/produtos/parondontax.webp',
     badge: 'Promoção ativa',
   },
   {
@@ -118,7 +118,7 @@ export const promotions: Promotion[] = [
       'Dispositivos médicos de qualidade para monitorização e cuidados de saúde em casa. Fiabilidade e precisão para o dia a dia.',
     discountLabel: '-10€',
     validUntil: '31 de março de 2026',
-    image: '/produtos/pic.png',
+    image: '/produtos/pic.webp',
     badge: 'Promoção ativa',
   },
   {
@@ -130,7 +130,7 @@ export const promotions: Promotion[] = [
       'Multivitamínico com coenzima Q10 para energia e vitalidade. Combinação de vitaminas e minerais para combater o cansaço e a fadiga.',
     discountLabel: 'até -7€',
     validUntil: '31 de março de 2026',
-    image: '/produtos/supradyn.png',
+    image: '/produtos/supradyn.webp',
     badge: 'Promoção ativa',
   },
   {
@@ -142,7 +142,7 @@ export const promotions: Promotion[] = [
       'Probiótico para o equilíbrio da flora intestinal. Estirpes selecionadas para apoiar a saúde digestiva e o sistema imunitário.',
     discountLabel: '-2€',
     validUntil: '31 de março de 2026',
-    image: '/produtos/symbiosys.png',
+    image: '/produtos/symbiosys.webp',
     badge: 'Promoção ativa',
   },
   {
@@ -154,7 +154,7 @@ export const promotions: Promotion[] = [
       'Suplemento alimentar para ajudar a adormecer mais rapidamente. Com melatonina e extratos naturais. Sem criar habituação.',
     discountLabel: 'até -3€',
     validUntil: '31 de março de 2026',
-    image: '/produtos/zzzquil.png',
+    image: '/produtos/zzzquil.webp',
     badge: 'Promoção ativa',
   },
 ]

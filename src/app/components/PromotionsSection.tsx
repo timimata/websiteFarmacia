@@ -52,6 +52,8 @@ export function PromotionsSection() {
       <div className="relative h-44 sm:h-56 overflow-hidden bg-gradient-to-br from-gray-50 to-emerald-50/30">
         <img
           src={promo.image}
+          srcSet={`${promo.image.replace('.webp', '-small.webp')} 400w, ${promo.image} 800w`}
+          sizes="(max-width: 640px) 75vw, (max-width: 1024px) 45vw, 25vw"
           alt={promo.title}
           loading="lazy"
           decoding="async"
@@ -115,7 +117,7 @@ export function PromotionsSection() {
             </p>
           </div>
           <img
-            src="/produtos/cartaoFarmaciaPortuguesa.png"
+            src="/produtos/cartaoFarmaciaPortuguesa.webp"
             alt="Cartão Farmácias Portuguesas"
             className="h-32 sm:h-40 md:h-52 w-auto object-contain flex-shrink-0"
           />
