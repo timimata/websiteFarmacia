@@ -2,10 +2,14 @@ import { useState, useRef, useEffect } from 'react';
 import { Sparkles, ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
 import { promotions } from '@/data/promotions';
 
+const MESES = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']
+const mesAtual = MESES[new Date().getMonth()]
+
 export function PromotionsSection() {
   const [isExpanded, setIsExpanded] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
   const leftBtnRef = useRef<HTMLButtonElement>(null);
   const rightBtnRef = useRef<HTMLButtonElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
@@ -107,13 +111,21 @@ export function PromotionsSection() {
               <span>Poupe agora</span>
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
-              Últimas Promoções
+              Promoções de {mesAtual}
             </h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-xl">
-              Aproveite as nossas ofertas especiais em produtos selecionados só neste mês.
+              Aproveite as nossas ofertas especiais em produtos selecionados só em {mesAtual}.
             </p>
             <p className="text-sm text-gray-500 mt-2">
-              Promoções exclusivas para aderentes do <strong className="text-emerald-700">Cartão Farmácias Portuguesas</strong>
+              Promoções exclusivas para aderentes do{' '}
+              <a
+                href="https://www.farmaciasportuguesas.pt/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-emerald-700 underline hover:text-emerald-800 transition-colors"
+              >
+                Cartão Farmácias Portuguesas
+              </a>
             </p>
           </div>
           <img
@@ -161,50 +173,52 @@ export function PromotionsSection() {
 
             {/* Scroll Progress Bar (draggable) */}
             <div className="flex justify-center mt-5">
-              <div
-                className="w-32 h-3 bg-gray-200 rounded-full overflow-hidden cursor-pointer relative"
-                onMouseDown={(e) => {
-                  const track = e.currentTarget;
-                  const el = scrollRef.current;
-                  if (!el) return;
-                  const setPos = (clientX: number) => {
-                    const rect = track.getBoundingClientRect();
-                    const pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
-                    el.scrollLeft = pct * (el.scrollWidth - el.clientWidth);
-                  };
-                  setPos(e.clientX);
-                  const onMove = (ev: MouseEvent) => setPos(ev.clientX);
-                  const onUp = () => {
-                    document.removeEventListener('mousemove', onMove);
-                    document.removeEventListener('mouseup', onUp);
-                  };
-                  document.addEventListener('mousemove', onMove);
-                  document.addEventListener('mouseup', onUp);
-                }}
-                onTouchStart={(e) => {
-                  const track = e.currentTarget;
-                  const el = scrollRef.current;
-                  if (!el) return;
-                  const setPos = (clientX: number) => {
-                    const rect = track.getBoundingClientRect();
-                    const pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
-                    el.scrollLeft = pct * (el.scrollWidth - el.clientWidth);
-                  };
-                  setPos(e.touches[0].clientX);
-                  const onMove = (ev: TouchEvent) => setPos(ev.touches[0].clientX);
-                  const onEnd = () => {
-                    document.removeEventListener('touchmove', onMove);
-                    document.removeEventListener('touchend', onEnd);
-                  };
-                  document.addEventListener('touchmove', onMove);
-                  document.addEventListener('touchend', onEnd);
-                }}
-              >
+              <div className="py-2 cursor-pointer" onMouseDown={(e) => {
+                const track = trackRef.current;
+                const el = scrollRef.current;
+                if (!track || !el) return;
+                const setPos = (clientX: number) => {
+                  const rect = track.getBoundingClientRect();
+                  const pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+                  el.scrollLeft = pct * (el.scrollWidth - el.clientWidth);
+                };
+                setPos(e.clientX);
+                const onMove = (ev: MouseEvent) => setPos(ev.clientX);
+                const onUp = () => {
+                  document.removeEventListener('mousemove', onMove);
+                  document.removeEventListener('mouseup', onUp);
+                };
+                document.addEventListener('mousemove', onMove);
+                document.addEventListener('mouseup', onUp);
+              }}
+              onTouchStart={(e) => {
+                const track = trackRef.current;
+                const el = scrollRef.current;
+                if (!track || !el) return;
+                const setPos = (clientX: number) => {
+                  const rect = track.getBoundingClientRect();
+                  const pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+                  el.scrollLeft = pct * (el.scrollWidth - el.clientWidth);
+                };
+                setPos(e.touches[0].clientX);
+                const onMove = (ev: TouchEvent) => setPos(ev.touches[0].clientX);
+                const onEnd = () => {
+                  document.removeEventListener('touchmove', onMove);
+                  document.removeEventListener('touchend', onEnd);
+                };
+                document.addEventListener('touchmove', onMove);
+                document.addEventListener('touchend', onEnd);
+              }}>
                 <div
-                  ref={progressRef}
-                  className="h-full bg-emerald-600 rounded-full pointer-events-none"
-                  style={{ width: '10%' }}
-                />
+                  ref={trackRef}
+                  className="w-32 h-3 bg-gray-200 rounded-full overflow-hidden relative"
+                >
+                  <div
+                    ref={progressRef}
+                    className="h-full bg-emerald-600 rounded-full pointer-events-none"
+                    style={{ width: '10%' }}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -227,10 +241,12 @@ export function PromotionsSection() {
         {isExpanded && (
           <div
             id="all-promotions-grid"
-            className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6"
+            className="mt-8 flex flex-wrap justify-center gap-5 sm:gap-6"
           >
             {promotions.map((promo) => (
-              <ProductCard key={promo.id} promo={promo} />
+              <div key={promo.id} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+                <ProductCard promo={promo} />
+              </div>
             ))}
           </div>
         )}

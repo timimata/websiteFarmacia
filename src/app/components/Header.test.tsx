@@ -7,7 +7,7 @@ describe('Header', () => {
 
     expect(screen.getByRole('button', { name: 'Início' })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Serviços' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Contactos' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Horários' })).toBeInTheDocument();
   });
 
   it('abre e fecha o menu mobile', () => {
