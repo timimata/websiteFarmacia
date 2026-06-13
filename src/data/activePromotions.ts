@@ -23,8 +23,8 @@ export const activePromotions: ActivePromotion[] = [
   { productId: 'fullmarks',         discountLabel: '-4€',    validUntil: '31 de maio de 2026' },
   { productId: 'centrum',           discountLabel: 'até -5€',validUntil: '31 de maio de 2026' },
   { productId: 'supradyn',          discountLabel: 'até -7€',validUntil: '31 de maio de 2026' },
-  { productId: 'clearblue',         discountLabel: '-2€',    validUntil: '31 de maio de 2026' },
   { productId: 'gine-canesbalance', discountLabel: '-3€',    validUntil: '31 de maio de 2026' },
-  { productId: 'kukident',          discountLabel: '-2€',    validUntil: '31 de maio de 2026' },
+  { productId: 'gine-canesfresh',   discountLabel: '-2€',    validUntil: '31 de maio de 2026' },
+  { productId: 'parodontax',        discountLabel: '-2€',    validUntil: '31 de maio de 2026' },
   { productId: 'fortimel',          discountLabel: '-6€',    note: 'Na compra de 2 embalagens', validUntil: '31 de maio de 2026' },
 ]
