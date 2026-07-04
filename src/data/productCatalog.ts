@@ -117,6 +117,15 @@ export const productCatalog: Product[] = [
     image: '/produtos/zzzquil.webp',
   },
   {
+    id: 'supradyn-sport',
+    title: 'Supradyn Sport',
+    tagline: 'Suplemento para desportistas — músculos, recuperação e energia.',
+    category: 'Suplementos',
+    description:
+      'Suplemento alimentar multivitamínico com minerais para desportistas. Contribui para o aumento da energia, normal funcionamento muscular e recuperação pós-treino. Com Magnésio e Potássio, sabor a laranja.',
+    image: '/produtos/supradyn_sport.webp',
+  },
+  {
     id: 'oleoban',
     title: 'Oleoban',
     tagline: 'Rotina de banho e hidratação para toda a família.',
@@ -169,5 +178,50 @@ export const productCatalog: Product[] = [
     description:
       'Creme adesivo para próteses dentárias completas e parciais. Pro Plus com firmeza ao mastigar e fixação todo o dia. Pro Ultimate com conforto e barreira anti-comida. Sem sabor.',
     image: '/produtos/kukident.webp',
+  },
+  {
+    id: 'kpl-plus',
+    title: 'KPL Plus',
+    tagline: 'Champô dermatológico anti-caspa e anti-seborreico.',
+    category: 'Cabelos',
+    description:
+      'Champô dermatológico da Cantabria Labs para couro cabeludo com caspa e seborréia. Com tecnologia AquaMunis, ácido salicílico e climbazol. Uso regular para controlo eficaz da caspa e oleosidade.',
+    image: '/produtos/kpl_plus.webp',
+  },
+  {
+    id: 'cistitone',
+    title: 'Cistitone',
+    tagline: 'Cápsulas para combater a queda de cabelo.',
+    category: 'Cabelos',
+    description:
+      'Suplemento alimentar da Cantabria Labs com Vitamina D, cistina e biotina para combater a queda de cabelo. Fórmula Forte BD indicada para hairloss. Embalagem com 60 cápsulas.',
+    image: '/produtos/cistitone.webp',
+  },
+  {
+    id: 'saforelle',
+    title: 'Saforelle',
+    tagline: 'Higiene e hidratação íntimas.',
+    category: 'Higiene Íntima',
+    description:
+      'Gama de higiene e hidratação íntima feminina. Inclui creme íntimo, gel de higiene íntima suave e calmante, e mousse de higiene íntima. Com ácido hialurónico e ingredientes de origem natural. Adequada para uso diário e após episiotomia.',
+    image: '/produtos/saforelle.webp',
+  },
+  {
+    id: 'artelac',
+    title: 'Artelac',
+    tagline: 'Alívio dos vários sintomas de olho seco.',
+    category: 'Saúde dos Olhos',
+    description:
+      'Gama de colírios Bausch+Lomb para olho seco. Artelac Ultra 4S para hidratação intensiva e regeneração. Artelac Splash Multidose para sintomas leves e utilizadores de lentes de contacto. Artelac Complete Multidose para hidratação duradoura. Sem conservantes.',
+    image: '/produtos/artelac.webp',
+  },
+  {
+    id: 'durex',
+    title: 'Durex',
+    tagline: 'Sexualidade e bem-estar íntimo.',
+    category: 'Sexualidade',
+    description:
+      'Gama completa de preservativos e lubrificantes Durex. Preservativos Naturals, Sensitivo Super Fino e Conexión Total Extra Lubrificado. Lubrificante Naturals H2O à base de água, 100% ingredientes naturais. Dispositivos médicos certificados.',
+    image: '/produtos/durex.webp',
   },
 ]

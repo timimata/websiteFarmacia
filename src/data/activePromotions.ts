@@ -20,11 +20,20 @@ export interface ActivePromotion {
 }
 
 export const activePromotions: ActivePromotion[] = [
-  { productId: 'fullmarks',         discountLabel: '-4€',    validUntil: '31 de maio de 2026' },
-  { productId: 'centrum',           discountLabel: 'até -5€',validUntil: '31 de maio de 2026' },
-  { productId: 'supradyn',          discountLabel: 'até -7€',validUntil: '31 de maio de 2026' },
-  { productId: 'gine-canesbalance', discountLabel: '-3€',    validUntil: '31 de maio de 2026' },
-  { productId: 'gine-canesfresh',   discountLabel: '-2€',    validUntil: '31 de maio de 2026' },
-  { productId: 'parodontax',        discountLabel: '-2€',    validUntil: '31 de maio de 2026' },
-  { productId: 'fortimel',          discountLabel: '-6€',    note: 'Na compra de 2 embalagens', validUntil: '31 de maio de 2026' },
+  { productId: 'fullmarks',         discountLabel: '-4€',    validUntil: '31 de julho de 2026' },
+  { productId: 'gine-canesbalance', discountLabel: '-3€',    validUntil: '31 de julho de 2026' },
+  { productId: 'gine-canesfresh',   discountLabel: '-2€',    validUntil: '31 de julho de 2026' },
+  { productId: 'parodontax',        discountLabel: '-2€',    validUntil: '31 de julho de 2026' },
+  { productId: 'supradyn-sport',    discountLabel: '-3€',    validUntil: '31 de julho de 2026' },
+  { productId: 'bepanthen-baby',    discountLabel: '-1,5€',    validUntil: '31 de julho de 2026' },
+  { productId: 'fortimel',          discountLabel: '-6€',    note: 'Na compra de 2 embalagens', validUntil: '31 de julho de 2026' },
+  { productId: 'aptamil',           discountLabel: '-3€',    validUntil: '31 de julho de 2026' },
+  { productId: 'clearblue',         discountLabel: '-2€',    validUntil: '31 de julho de 2026' },
+  { productId: 'kpl-plus',          discountLabel: '-4€',    validUntil: '31 de julho de 2026' },
+  { productId: 'cistitone',         discountLabel: '-6€',    validUntil: '31 de julho de 2026' },
+  { productId: 'saforelle',         discountLabel: '-2€',    validUntil: '31 de julho de 2026' },
+  { productId: 'kukident',          discountLabel: '-2€',    validUntil: '31 de julho de 2026' },
+  { productId: 'corega',            discountLabel: '-2€',    validUntil: '31 de julho de 2026' },
+  { productId: 'durex',             discountLabel: '-2€',    validUntil: '31 de julho de 2026' },
+  { productId: 'artelac',           discountLabel: '-2€',    validUntil: '31 de julho de 2026' },
 ]
