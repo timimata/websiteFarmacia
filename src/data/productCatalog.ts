@@ -216,6 +216,15 @@ export const productCatalog: Product[] = [
     image: '/produtos/artelac.webp',
   },
   {
+    id: 'paranix',
+    title: 'Paranix',
+    tagline: 'Champô de tratamento contra piolhos e lêndeas.',
+    category: 'Cabelos',
+    description:
+      'Champô de tratamento contra piolhos e lêndeas com pente, 200ml. Fórmula de ação dupla clinicamente testada e comprovadamente eficaz. Facilita o penteado para remoção mais fácil. Sem inseticidas — os piolhos não desenvolvem resistência. Testado dermatologicamente. Dispositivo Médico.',
+    image: '/produtos/paranix.webp',
+  },
+  {
     id: 'durex',
     title: 'Durex',
     tagline: 'Sexualidade e bem-estar íntimo.',
