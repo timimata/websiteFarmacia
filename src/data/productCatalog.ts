@@ -207,6 +207,15 @@ export const productCatalog: Product[] = [
     image: '/produtos/saforelle.webp',
   },
   {
+    id: 'vicks',
+    title: 'Vicks Proteção',
+    tagline: 'Prevenção de gripes e constipações.',
+    category: 'Gripes e Constipações',
+    description:
+      'Dispositivo médico clinicamente comprovado para ajudar a prevenir constipações. Protege quando se sente em risco de apanhar uma constipação. Não usar em crianças menores de 1 ano.',
+    image: '/produtos/vicks.webp',
+  },
+  {
     id: 'artelac',
     title: 'Artelac',
     tagline: 'Alívio dos vários sintomas de olho seco.',
@@ -214,6 +223,15 @@ export const productCatalog: Product[] = [
     description:
       'Gama de colírios Bausch+Lomb para olho seco. Artelac Ultra 4S para hidratação intensiva e regeneração. Artelac Splash Multidose para sintomas leves e utilizadores de lentes de contacto. Artelac Complete Multidose para hidratação duradoura. Sem conservantes.',
     image: '/produtos/artelac.webp',
+  },
+  {
+    id: 'paranix-express',
+    title: 'Paranix Express',
+    tagline: 'Elimina piolhos e lêndeas numa só aplicação.',
+    category: 'Cabelos',
+    description:
+      'Champô de tratamento Paranix Express 200ml. Elimina piolhos e lêndeas em apenas uma aplicação, enquanto limpa suavemente o cabelo. Fórmula prática que facilita o pentear após o tratamento. Indicado para crianças e adultos. 100% eficaz, clinicamente comprovado.',
+    image: '/produtos/paranix-express.webp',
   },
   {
     id: 'paranix',

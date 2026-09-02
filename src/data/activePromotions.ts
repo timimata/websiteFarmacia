@@ -1,17 +1,3 @@
-// ============================================================
-//  PROMOÇÕES ATIVAS — edita este ficheiro todo o mês
-// ============================================================
-//
-//  Como usar:
-//   • Adicionar produto em promoção  → adiciona uma linha { productId, discountLabel, validUntil }
-//   • Remover promoção               → apaga a linha
-//   • Alterar desconto               → muda o discountLabel
-//   • Nota extra (ex: "na compra de 2") → adiciona note: '...'
-//
-//  productId deve corresponder ao id em productCatalog.ts
-//  Para adicionar um produto NOVO ao catálogo, edita productCatalog.ts primeiro.
-// ============================================================
-
 export interface ActivePromotion {
   productId: string
   discountLabel: string
@@ -20,16 +6,14 @@ export interface ActivePromotion {
 }
 
 export const activePromotions: ActivePromotion[] = [
-  { productId: 'gine-canesbalance', discountLabel: '-3€',    validUntil: '31 de agosto de 2026' },
-  { productId: 'gine-canesfresh',   discountLabel: '-2€',    validUntil: '31 de agosto de 2026' },
-  { productId: 'supradyn-sport',    discountLabel: '-3€',    validUntil: '31 de agosto de 2026' },
-  { productId: 'bepanthen-baby',    discountLabel: '-1,5€',    validUntil: '31 de agosto de 2026' },
-  { productId: 'fortimel',          discountLabel: '-6€',    note: 'Na compra de 2 embalagens', validUntil: '31 de agosto de 2026' },
-  { productId: 'aptamil',           discountLabel: '-3€',    validUntil: '31 de agosto de 2026' },
-  { productId: 'saforelle',         discountLabel: '-2€',    validUntil: '31 de agosto de 2026' },
-  { productId: 'kukident',          discountLabel: '-2€',    validUntil: '31 de agosto de 2026' },
-  { productId: 'corega',            discountLabel: '-2€',    validUntil: '31 de agosto de 2026' },
-  { productId: 'durex',             discountLabel: '-2€',    validUntil: '31 de agosto de 2026' },
-  { productId: 'artelac',           discountLabel: '-2€',    validUntil: '31 de agosto de 2026' },
-  { productId: 'paranix',            discountLabel: '-25%',    validUntil: '31 de agosto de 2026' },
+  { productId: 'gine-canesbalance', discountLabel: '-20%',    validUntil: '30 de setembro de 2026' },
+  { productId: 'gine-canesfresh',   discountLabel: '-25%',    validUntil: '30 de setembro de 2026' },
+  { productId: 'supradyn',    discountLabel: '-15%',    validUntil: '30 de setembro de 2026' },
+  { productId: 'bepanthen-baby',    discountLabel: '-1,5€',    validUntil: '30 de setembro de 2026' },
+  { productId: 'fortimel',           discountLabel: '-6€ na segunda embalagem',    validUntil: '30 de setembro de 2026' },
+  { productId: 'zzzquil',             discountLabel: '-3€',    validUntil: '30 de setembro de 2026' },
+  { productId: 'centrum',             discountLabel: '-5€',    validUntil: '30 de setembro de 2026' },
+  { productId: 'parodontax',          discountLabel: '-2€',    validUntil: '30 de setembro de 2026' },
+  { productId: 'vicks',               discountLabel: '-1€',    validUntil: '30 de setembro de 2026' },
+  { productId: 'paranix-express',     discountLabel: '-25%',   validUntil: '30 de setembro de 2026' },
 ]
