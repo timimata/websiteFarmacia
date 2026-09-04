@@ -5,13 +5,13 @@ export function TeamSection() {
     { name: 'Dra. Lurdes Nunes', role: 'Proprietária e Farmacêutica', photo: '/equipa_fotos/drMaria.webp' },
     { name: 'Dra. Rita Diniz', role: 'Farmacêutica', photo: '/equipa_fotos/drRita.webp' },
     { name: 'Joana Ramos', role: 'Técnica Auxiliar de Farmácia', photo: '/equipa_fotos/joana.webp' },
-    { name: 'Dra. Cláudia Santos', role: 'Farmacêutica', photo: null },
     { name: 'Marta Martins', role: 'Técnica Auxiliar de Farmácia', photo: '/equipa_fotos/marta.webp' },
     { name: 'Isilda Alves', role: 'Administrativa', photo: '/equipa_fotos/isilda.webp' },
     { name: 'Dra. Inês Gonçalves', role: 'Farmacêutica', photo: null },
     { name: 'Dra. Paula Barreto', role: 'Farmacêutica', photo: '/equipa_fotos/drPaula.webp' },
     { name: 'Inês Monteiro', role: 'Técnica Superior de Diagnóstico e Terapêutica', photo: '/equipa_fotos/ines.webp' },
     { name: 'Dra. Catarina Cordeiro', role: 'Farmacêutica', photo: '/equipa_fotos/drCatarina.webp' },
+    { name: 'Lurdes Silva', role: 'Técnica Auxiliar de Farmácia', photo: '/equipa_fotos/lurdesilva.webp' },
   ];
 
   return (
