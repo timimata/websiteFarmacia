@@ -251,4 +251,22 @@ export const productCatalog: Product[] = [
       'Gama completa de preservativos e lubrificantes Durex. Preservativos Naturals, Sensitivo Super Fino e Conexión Total Extra Lubrificado. Lubrificante Naturals H2O à base de água, 100% ingredientes naturais. Dispositivos médicos certificados.',
     image: '/produtos/durex.webp',
   },
+  {
+    id: 'redoxon',
+    title: 'Redoxon',
+    tagline: 'Extra Defesas — tripla ação para o sistema imunitário.',
+    category: 'Suplementos',
+    description:
+      'Redoxon Extra Defesas da Bayer com vitamina C, vitamina D e zinco. Ajuda diária para o sistema imunitário, sobretudo em mudanças de estação e momentos de maior exigência. 30 comprimidos efervescentes, sabor a laranja.',
+    image: '/produtos/redoxon.webp',
+  },
+  {
+    id: 'dorminatur',
+    title: 'DormiNatur',
+    tagline: 'Soluções para adormecer e dormir melhor.',
+    category: 'Suplementos',
+    description:
+      'Gama de suplementos para o sono da Esteve. Melatonina em gummies, gotas e comprimidos Forte, que ajudam a adormecer mais rapidamente. DormiNatur Tripla Ação e DormiNatur Valeriana, com papoila-da-califórnia e passiflora, para um sono relaxante e natural.',
+    image: '/produtos/dorminatur.webp',
+  },
 ]
