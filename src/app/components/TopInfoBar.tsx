@@ -19,9 +19,15 @@ export function TopInfoBar() {
           </div>
           
           {/* Opening Hours */}
-          <div className="flex items-center gap-1.5 sm:gap-2">
-            <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
-            <span className="font-medium whitespace-nowrap">{pharmacyContact.topBarHours}</span>
+          <div className="flex items-start gap-1.5 sm:gap-2 min-w-0">
+            <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0 mt-0.5" />
+            <div className="flex flex-wrap gap-x-3 gap-y-0.5 font-medium text-left">
+              {pharmacyContact.topBarHours.map((schedule) => (
+                <span key={schedule.days} className="whitespace-nowrap">
+                  {`${schedule.days}: ${schedule.time}`}
+                </span>
+              ))}
+            </div>
           </div>
           
           {/* Location - Hidden on smallest mobile, shown on sm and up */}

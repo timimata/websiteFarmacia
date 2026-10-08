@@ -22,7 +22,11 @@ export const pharmacyContact = {
   phoneHref: 'tel:214323020',
   phoneHref2: 'tel:214324097',
   email: 'f.ascensao.nunes@gmail.com',
-  topBarHours: 'Seg–Sex: 09h00–20h00',
+  topBarHours: [
+    { days: 'Seg–Sex', time: '09h00–20h00' },
+    { days: 'Sáb', time: '09h00–19h00' },
+    { days: 'Dom e Feriados', time: '10h00–13h00 | 14h00–19h00' },
+  ],
   mapsQuery:
     'https://maps.google.com/?q=Farmácia+Ascensão+Nunes,+Rua+Anta+da+Agualva+12A,+Agualva-Cacém',
   mapsDirections:
