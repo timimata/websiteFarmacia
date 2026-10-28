@@ -7,11 +7,11 @@ export function TeamSection() {
     { name: 'Joana Ramos', role: 'Técnica Auxiliar de Farmácia', photo: '/equipa_fotos/joana.webp' },
     { name: 'Marta Martins', role: 'Técnica Auxiliar de Farmácia', photo: '/equipa_fotos/marta.webp' },
     { name: 'Isilda Alves', role: 'Administrativa', photo: '/equipa_fotos/isilda.webp' },
-    { name: 'Dra. Inês Gonçalves', role: 'Farmacêutica', photo: null },
     { name: 'Dra. Paula Barreto', role: 'Farmacêutica', photo: '/equipa_fotos/drPaula.webp' },
     { name: 'Inês Monteiro', role: 'Técnica Superior de Diagnóstico e Terapêutica', photo: '/equipa_fotos/ines.webp' },
     { name: 'Dra. Catarina Cordeiro', role: 'Farmacêutica', photo: '/equipa_fotos/drCatarina.webp' },
     { name: 'Lurdes Silva', role: 'Técnica Auxiliar de Farmácia', photo: '/equipa_fotos/lurdesilva.webp' },
+    { name: 'Dra. Inês Rocha', role: 'Farmacêutica', photo: '/equipa_fotos/inesrocha.webp' },
   ];
 
   return (
@@ -26,11 +26,11 @@ export function TeamSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-5 lg:gap-6">
+        <div className="flex flex-wrap justify-center gap-3 sm:gap-5 lg:gap-6">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
+              className="w-[calc((100%-0.75rem)/2)] sm:w-[calc((100%-2.5rem)/3)] lg:w-[calc((100%-4.5rem)/4)] group bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
             >
               <div className="relative overflow-hidden aspect-square">
                 {member.photo ? (
