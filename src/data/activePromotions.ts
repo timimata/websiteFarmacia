@@ -6,7 +6,7 @@ export interface ActivePromotion {
 }
 
 export const activePromotions: ActivePromotion[] = [
-  { productId: 'fortimel',            discountLabel: '-6€',     note: 'Em duas embalagens', validUntil: '30 de novembro de 2026' },
+  { productId: 'fortimel',            discountLabel: '-6€ em duas embalagens',validUntil: '30 de novembro de 2026' },
   { productId: 'nan-optipro',         discountLabel: '-4€',     validUntil: '30 de novembro de 2026' },
   { productId: 'nan-care',            discountLabel: '-2€',     validUntil: '30 de novembro de 2026' },
   { productId: 'kukident',            discountLabel: '-2€',     validUntil: '30 de novembro de 2026' },

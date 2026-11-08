@@ -275,7 +275,7 @@ export const productCatalog: Product[] = [
     tagline: 'Suplementos alimentares para bebés e crianças.',
     category: 'Bebé e Mamã',
     description:
-      'Gama de suplementos alimentares da Nestlé para bebés e crianças. Inclui NANCARE Vitamina D em gotas, 10 ml: a vitamina D é necessária para o crescimento e desenvolvimento normais dos ossos e contribui para o normal funcionamento do sistema imunitário das crianças. Sem glúten.',
+      'Gama de suplementos alimentares da Nestlé para bebés e crianças. NANCARE Vitamina D em gotas é indicado para bebés amamentados e com pouca exposição solar: a vitamina D é necessária para o crescimento e desenvolvimento normais dos ossos e contribui para o normal funcionamento do sistema imunitário. Basta 2 gotas por dia, diretamente na boca, no mamilo ou no leite. Sem glúten nem óleo de palma. Frasco de 10 ml.',
     image: '/produtos/nanCare.webp',
   },
   {
@@ -284,7 +284,7 @@ export const productCatalog: Product[] = [
     tagline: 'Águas do mar isotónicas e hipertónicas.',
     category: 'Gripes e Constipações',
     description:
-      'Sprays nasais de água do mar 100% natural, ricos em oligoelementos e sais minerais. A versão isotónica limpa e hidrata o nariz na higiene diária e ajuda a respirar melhor; a versão hipertónica ajuda a descongestionar o nariz entupido. Gama com opções para bebés, crianças e adultos.',
+      'Sprays nasais de água do mar 100% natural, ricos em oligoelementos e sais minerais. Stérimar Higiene (isotónico) limpa e hidrata o nariz no dia a dia, para toda a família a partir dos 6 meses. Stérimar Nariz Entupido (hipertónico) ajuda a descongestionar o nariz em caso de constipação. A gama inclui também versões para bebés e para alergias.',
     image: '/produtos/sterimar.webp',
   },
   {
@@ -293,7 +293,7 @@ export const productCatalog: Product[] = [
     tagline: 'O seu cuidado diário para nariz e lábios.',
     category: 'Beleza',
     description:
-      'Gama de bálsamos reparadores da LETI para o cuidado diário do nariz e dos lábios. Hidrata, protege e ajuda a reparar a pele seca, irritada ou gretada, por exemplo com o frio ou durante as constipações. Letibalm Repair Fluido, 10 ml, indicado para adultos e crianças.',
-    image: '/produtos/letibalm.webp',
+      'Gama de bálsamos reparadores da LETI para o cuidado diário do nariz e dos lábios. Com ação hidratante e emoliente, protege e repara lábios secos e gretados e a pele do nariz irritada por se assoar muitas vezes durante as constipações. Disponível em fluido, bálsamo e versões Nature, Junior e Pediátrica. Tubo de 10 ml.',
+    image: '/produtos/letibalm2.webp',
   },
 ]
