@@ -296,4 +296,40 @@ export const productCatalog: Product[] = [
       'Gama de bálsamos reparadores da LETI para o cuidado diário do nariz e dos lábios. Com ação hidratante e emoliente, protege e repara lábios secos e gretados e a pele do nariz irritada por se assoar muitas vezes durante as constipações. Disponível em fluido, bálsamo e versões Nature, Junior e Pediátrica. Tubo de 10 ml.',
     image: '/produtos/letibalm2.webp',
   },
+  {
+    id: 'bisolnatural',
+    title: 'Bisolnatural 2 em 1',
+    tagline: 'Xarope 100% natural para a tosse seca e produtiva.',
+    category: 'Gripes e Constipações',
+    description:
+      'Xarope da Sanofi com mel e complexo Poliflav, para o alívio da tosse seca e da tosse com expetoração, sobretudo quando associada a constipações e infeções das vias respiratórias superiores. 100% natural e sem glúten. Indicado para adultos e crianças com mais de 1 ano. Dispositivo médico, frasco de 180 g.',
+    image: '/produtos/bisolnatural.webp',
+  },
+  {
+    id: 'zarbees',
+    title: "Zarbee's Garganta & Extra Imunidade",
+    tagline: 'Pastilhas com mel para a garganta e as defesas.',
+    category: 'Gripes e Constipações',
+    description:
+      "Suplemento alimentar em pastilhas para chupar, com mel, óleo essencial de hortelã-pimenta, vitamina C e zinco. Suaviza a garganta, e a vitamina C e o zinco contribuem para o normal funcionamento do sistema imunitário. Ingredientes de origem natural, sem corantes nem aromas artificiais. Para adultos e crianças a partir dos 8 anos. Embalagem de 24 pastilhas.",
+    image: '/produtos/zarbees.webp',
+  },
+  {
+    id: 'artrozen',
+    title: 'Artrozen',
+    tagline: 'Suplemento completo para as articulações.',
+    category: 'Suplementos',
+    description:
+      'Suplemento alimentar da Tecnifar para o cuidado das articulações. Fórmula completa com glucosamina, condroitina, MSM, colagénio, ácido hialurónico, quercetina e silício. Embalagem com 60 comprimidos. Não recomendado durante a gravidez e a amamentação sem indicação médica.',
+    image: '/produtos/artrozen.webp',
+  },
+  {
+    id: 'rhinomer-plus',
+    title: 'Rhinomer Plus',
+    tagline: 'Descongestão natural eficaz e limpeza do nariz.',
+    category: 'Gripes e Constipações',
+    description:
+      'Sprays nasais de água do mar hipertónica 100% natural, que aliviam a congestão nasal e limpam e hidratam a cavidade nasal em caso de gripe, constipação ou sinusite. Três forças: Força 1 Suave para bebés e adultos, Força 2 Média para adultos e Força 3 Forte, com complexo Algomer, para utilizadores frequentes a partir dos 12 anos.',
+    image: '/produtos/rhinomer-plus.webp',
+  },
 ]

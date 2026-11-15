@@ -17,4 +17,10 @@ export const activePromotions: ActivePromotion[] = [
   { productId: 'aptamil',              discountLabel: '-3€',     validUntil: '30 de novembro de 2026' },
   { productId: 'centrum',              discountLabel: 'até -5€',     validUntil: '30 de novembro de 2026' },
   { productId: 'corega',               discountLabel: 'até -2€',     validUntil: '30 de novembro de 2026' },
+  { productId: 'redoxon',              discountLabel: '-3€',     validUntil: '30 de novembro de 2026' },
+  { productId: 'supradyn',              discountLabel: 'até -7€',     validUntil: '30 de novembro de 2026' },
+  { productId: 'zarbees',             discountLabel: 'até -3€', validUntil: '30 de novembro de 2026' },
+  { productId: 'bisolnatural',        discountLabel: '-3€',     validUntil: '30 de novembro de 2026' },
+  { productId: 'artrozen',            discountLabel: '-3€',     validUntil: '30 de novembro de 2026' },
+  { productId: 'rhinomer-plus',       discountLabel: '-2€',     validUntil: '30 de novembro de 2026' },
 ]
