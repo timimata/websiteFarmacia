@@ -15,6 +15,6 @@ export const activePromotions: ActivePromotion[] = [
   { productId: 'bepanthen-baby',      discountLabel: '-1,5€',   validUntil: '30 de novembro de 2026' },
   { productId: 'letibalm',            discountLabel: '-1,5€',   validUntil: '30 de novembro de 2026' },
   { productId: 'aptamil',              discountLabel: '-3€',     validUntil: '30 de novembro de 2026' },
-  { productId: 'centrum',              discountLabel: '-5€',     validUntil: '30 de novembro de 2026' },
+  { productId: 'centrum',              discountLabel: 'até -5€',     validUntil: '30 de novembro de 2026' },
   { productId: 'corega',               discountLabel: 'até -2€',     validUntil: '30 de novembro de 2026' },
 ]
